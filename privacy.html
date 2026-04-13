@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Politique de confidentialite — GymQuest</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .privacy { padding: 120px 24px 80px; max-width: 720px; margin: 0 auto; }
+    .privacy h1 { font-size: 32px; font-weight: 800; margin-bottom: 8px; }
+    .privacy .updated { color: var(--text-muted); font-size: 14px; margin-bottom: 40px; }
+    .privacy h2 { font-size: 20px; font-weight: 700; margin: 32px 0 12px; }
+    .privacy p, .privacy li { font-size: 15px; color: var(--text-secondary); line-height: 1.8; margin-bottom: 12px; }
+    .privacy ul { padding-left: 20px; margin-bottom: 16px; }
+    .privacy li { margin-bottom: 6px; }
+    .privacy a { color: var(--indigo); }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/icon.png" alt="GymQuest" width="36" height="36">
+        <span>GymQuest</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="privacy">
+    <h1>Politique de confidentialite</h1>
+    <p class="updated">Derniere mise a jour : 13 avril 2026</p>
+
+    <h2>Introduction</h2>
+    <p>GymQuest ("l'Application") respecte votre vie privee. Cette politique explique quelles donnees nous collectons, pourquoi et comment elles sont protegees.</p>
+
+    <h2>Donnees collectees</h2>
+    <ul>
+      <li><strong>Compte utilisateur :</strong> adresse email et mot de passe (via Supabase Auth)</li>
+      <li><strong>Profil :</strong> pseudo, classe de personnage, niveau, XP</li>
+      <li><strong>Donnees d'entrainement :</strong> exercices, series, charges, duree des seances</li>
+      <li><strong>Donnees physiques (optionnel) :</strong> poids et taille, si renseignes</li>
+    </ul>
+
+    <h2>Donnees NON collectees</h2>
+    <ul>
+      <li>Localisation GPS</li>
+      <li>Contacts du telephone</li>
+      <li>Donnees de sante Apple HealthKit ou Google Fit</li>
+      <li>Photos ou fichiers personnels</li>
+    </ul>
+
+    <h2>Utilisation des donnees</h2>
+    <p>Vos donnees sont utilisees exclusivement pour :</p>
+    <ul>
+      <li>Fournir et ameliorer les fonctionnalites de l'application</li>
+      <li>Calculer votre progression (XP, niveaux, badges)</li>
+      <li>Sauvegarder votre historique d'entrainement</li>
+      <li>Envoyer des notifications de rappel (si activees)</li>
+    </ul>
+
+    <h2>Stockage et securite</h2>
+    <p>Les donnees sont stockees sur les serveurs de <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (infrastructure AWS, region Europe). L'acces aux donnees est protege par des politiques de securite au niveau base de donnees (Row Level Security). Chaque utilisateur ne peut acceder qu'a ses propres donnees.</p>
+
+    <h2>Partage des donnees</h2>
+    <p>Nous ne vendons, ne louons et ne partageons jamais vos donnees personnelles avec des tiers. Les seuls services tiers utilises sont :</p>
+    <ul>
+      <li><strong>Supabase :</strong> hebergement de la base de donnees et authentification</li>
+      <li><strong>RevenueCat :</strong> gestion des abonnements in-app</li>
+      <li><strong>Sentry :</strong> suivi des erreurs techniques (aucune donnee personnelle)</li>
+    </ul>
+
+    <h2>Suppression des donnees</h2>
+    <p>Vous pouvez demander la suppression de votre compte et de toutes vos donnees a tout moment en nous contactant a <a href="mailto:contact@gymquest.app">contact@gymquest.app</a>. La suppression sera effectuee sous 30 jours.</p>
+
+    <h2>Contact</h2>
+    <p>Pour toute question relative a cette politique, contactez-nous a <a href="mailto:contact@gymquest.app">contact@gymquest.app</a>.</p>
+  </main>
+
+</body>
+</html>
