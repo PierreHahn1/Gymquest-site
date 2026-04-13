@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Politique de confidentialite — GymQuest</title>
+  <title>Politique de confidentialité — GymQuest</title>
   <link rel="icon" type="image/png" href="assets/icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,53 +32,88 @@
   </nav>
 
   <main class="privacy">
-    <h1>Politique de confidentialite</h1>
-    <p class="updated">Derniere mise a jour : 13 avril 2026</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="updated">Dernière mise à jour : 13 avril 2026</p>
 
     <h2>Introduction</h2>
-    <p>GymQuest ("l'Application") respecte votre vie privee. Cette politique explique quelles donnees nous collectons, pourquoi et comment elles sont protegees.</p>
+    <p>GymQuest (« l'Application ») est éditée par Pierre Hahn, auto-entrepreneur immatriculé sous le SIRET 87834865500027 (NAF 6202A). Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos données personnelles, conformément au Règlement Général sur la Protection des Données (RGPD).</p>
 
-    <h2>Donnees collectees</h2>
+    <h2>1. Données collectées</h2>
     <ul>
-      <li><strong>Compte utilisateur :</strong> adresse email et mot de passe (via Supabase Auth)</li>
-      <li><strong>Profil :</strong> pseudo, classe de personnage, niveau, XP</li>
-      <li><strong>Donnees d'entrainement :</strong> exercices, series, charges, duree des seances</li>
-      <li><strong>Donnees physiques (optionnel) :</strong> poids et taille, si renseignes</li>
+      <li><strong>Compte utilisateur :</strong> adresse email et mot de passe (via Supabase Auth).</li>
+      <li><strong>Profil :</strong> pseudo, classe de personnage, niveau, points d'expérience.</li>
+      <li><strong>Données d'entraînement :</strong> exercices réalisés, séries, répétitions, charges, durée des séances, records personnels.</li>
+      <li><strong>Données de progression :</strong> badges débloqués, quêtes complétées, arbre de compétences.</li>
+      <li><strong>Données d'achat :</strong> statut de l'abonnement Premium (géré par Apple/Google via RevenueCat). Nous ne stockons aucune donnée bancaire.</li>
+      <li><strong>Données techniques :</strong> rapports de crash et données de performance applicative (via Sentry), pour améliorer la stabilité.</li>
     </ul>
 
-    <h2>Donnees NON collectees</h2>
+    <h2>2. Données non collectées</h2>
     <ul>
       <li>Localisation GPS</li>
-      <li>Contacts du telephone</li>
-      <li>Donnees de sante Apple HealthKit ou Google Fit</li>
-      <li>Photos ou fichiers personnels</li>
+      <li>Contacts ou carnet d'adresses</li>
+      <li>Photos, vidéos ou fichiers personnels</li>
+      <li>Données de santé Apple HealthKit ou Google Fit</li>
+      <li>Identifiant publicitaire (IDFA/GAID)</li>
+      <li>Données biométriques</li>
     </ul>
 
-    <h2>Utilisation des donnees</h2>
-    <p>Vos donnees sont utilisees exclusivement pour :</p>
+    <h2>3. Utilisation des données</h2>
+    <p>Vos données sont utilisées exclusivement pour :</p>
     <ul>
-      <li>Fournir et ameliorer les fonctionnalites de l'application</li>
-      <li>Calculer votre progression (XP, niveaux, badges)</li>
-      <li>Sauvegarder votre historique d'entrainement</li>
-      <li>Envoyer des notifications de rappel (si activees)</li>
+      <li>Assurer le fonctionnement de l'application (authentification, sauvegarde des séances).</li>
+      <li>Calculer votre progression RPG (XP, niveaux, badges, classe).</li>
+      <li>Afficher votre historique et vos statistiques d'entraînement.</li>
+      <li>Envoyer des notifications liées à votre activité (rappels de séance, streak en danger) — uniquement si vous les avez activées.</li>
+      <li>Diagnostiquer et corriger les bugs (rapports de crash anonymisés).</li>
     </ul>
 
-    <h2>Stockage et securite</h2>
-    <p>Les donnees sont stockees sur les serveurs de <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (infrastructure AWS, region Europe). L'acces aux donnees est protege par des politiques de securite au niveau base de donnees (Row Level Security). Chaque utilisateur ne peut acceder qu'a ses propres donnees.</p>
-
-    <h2>Partage des donnees</h2>
-    <p>Nous ne vendons, ne louons et ne partageons jamais vos donnees personnelles avec des tiers. Les seuls services tiers utilises sont :</p>
+    <h2>4. Partage des données</h2>
+    <p>Nous ne vendons, ne louons et ne partageons vos données personnelles avec aucun tiers à des fins publicitaires ou commerciales.</p>
+    <p>Vos données sont traitées par les services tiers suivants, strictement nécessaires au fonctionnement :</p>
     <ul>
-      <li><strong>Supabase :</strong> hebergement de la base de donnees et authentification</li>
-      <li><strong>RevenueCat :</strong> gestion des abonnements in-app</li>
-      <li><strong>Sentry :</strong> suivi des erreurs techniques (aucune donnee personnelle)</li>
+      <li><strong>Supabase :</strong> hébergement de la base de données et authentification (infrastructure cloud, région Europe).</li>
+      <li><strong>Sentry :</strong> rapports de crash (données anonymisées, aucune donnée personnelle).</li>
+      <li><strong>RevenueCat :</strong> gestion des abonnements in-app (aucune donnée bancaire ne transite par nos serveurs).</li>
+      <li><strong>Expo / EAS :</strong> mises à jour de l'application (aucune donnée utilisateur transmise).</li>
     </ul>
 
-    <h2>Suppression des donnees</h2>
-    <p>Vous pouvez demander la suppression de votre compte et de toutes vos donnees a tout moment en nous contactant a <a href="mailto:contact@gymquest.app">contact@gymquest.app</a>. La suppression sera effectuee sous 30 jours.</p>
+    <h2>5. Stockage et sécurité</h2>
+    <p>Vos données sont stockées sur les serveurs de <a href="https://supabase.com" target="_blank" rel="noopener">Supabase</a> (infrastructure cloud sécurisée). Toutes les communications sont chiffrées via HTTPS/TLS. Les mots de passe sont hashés et ne sont jamais stockés en clair. L'accès aux données est protégé par des politiques de sécurité au niveau base de données (Row Level Security) — chaque utilisateur ne peut accéder qu'à ses propres données.</p>
 
-    <h2>Contact</h2>
-    <p>Pour toute question relative a cette politique, contactez-nous a <a href="mailto:contact@gymquest.app">contact@gymquest.app</a>.</p>
+    <h2>6. Durée de conservation</h2>
+    <p>Vos données sont conservées tant que votre compte est actif. Si vous supprimez votre compte, toutes vos données personnelles seront définitivement effacées dans un délai de 30 jours.</p>
+
+    <h2>7. Vos droits (RGPD)</h2>
+    <p>Conformément au Règlement Général sur la Protection des Données, vous disposez des droits suivants :</p>
+    <ul>
+      <li><strong>Accès :</strong> vous pouvez consulter toutes vos données dans l'application.</li>
+      <li><strong>Rectification :</strong> vous pouvez modifier vos informations à tout moment.</li>
+      <li><strong>Suppression :</strong> vous pouvez demander la suppression de votre compte et de toutes vos données.</li>
+      <li><strong>Portabilité :</strong> vous pouvez exporter vos données d'entraînement.</li>
+      <li><strong>Opposition :</strong> vous pouvez désactiver les notifications à tout moment.</li>
+    </ul>
+    <p>Pour exercer vos droits, contactez-nous à <a href="mailto:privacy@gymquest.app">privacy@gymquest.app</a>.</p>
+
+    <h2>8. Mineurs</h2>
+    <p>GymQuest est accessible à tous les âges (classification 4+). Aucune donnée sensible n'est collectée. Pour les utilisateurs de moins de 16 ans, le consentement d'un parent ou tuteur est requis conformément au RGPD.</p>
+
+    <h2>9. Modifications</h2>
+    <p>Nous pouvons mettre à jour cette politique de confidentialité. En cas de modification substantielle, vous serez informé via l'application. La date de dernière mise à jour est indiquée en haut de cette page.</p>
+
+    <h2>10. Éditeur</h2>
+    <p>Pierre Hahn — Auto-entrepreneur</p>
+    <ul>
+      <li>SIRET : 87834865500027</li>
+      <li>NAF : 6202A — Conseil en systèmes et logiciels informatiques</li>
+      <li>Adresse : 234 avenue du Mondial de Rugby 2, 34070 Montpellier, France</li>
+    </ul>
+
+    <h2>11. Contact</h2>
+    <p>Pour toute question relative à vos données personnelles :</p>
+    <ul>
+      <li>Email : <a href="mailto:privacy@gymquest.app">privacy@gymquest.app</a></li>
+    </ul>
   </main>
 
 </body>
